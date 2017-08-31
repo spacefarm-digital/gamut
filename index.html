@@ -15,6 +15,10 @@
 		<meta name="msapplication-TileColor" content="#F5F7F8">
 		<meta name="theme-color" content="#F5F7F8">
 	</head>
+	<!-- Mailchimp stuff -->
+	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet"
+	    type="text/css">
+
 	<style>
 		* {
 			margin: 0;
@@ -55,35 +59,99 @@
 			margin-bottom: 1rem;
 		}
 
-        a {
-            font-weight: 600;
-            color: #5538fa;
-            transition: opacity 150ms ease-out;
-        }
-        a:hover {
-            opacity: .75;
-        }
-/*
-        div {
-            display: flex;
-        }
+		a {
+			font-weight: 600;
+			color: #5538fa;
+			transition: opacity 150ms ease-out;
+		}
 
-        input {
-            font-size: 1rem;
-            padding: .25rem .5rem;
-            border: 0;
-            border-radius: 4px;
-            display: inline-block;
-            margin-right: .5rem;
-        }
+		a:hover {
+			opacity: .75;
+		}
 
-        .button {
-            background-color: #fff;
-            box-shadow: 0 .2rem 0 #000;
-            font-weight: 700;
-            margin: 0;
-            cursor: pointer
-        }*/
+		div {
+			display: flex;
+		}
+
+		input {
+			font-size: 1rem;
+			padding: .25rem .5rem;
+			border: 0;
+			border-radius: 8px;
+			display: block;
+			margin-right: .5rem;
+ 			box-shadow: 0 0 10px 0 rgba(61,62,64,0.07), 0 4px 8px 0 rgba(61,62,64,0.025);
+ 			padding: 10px 16px;
+			float: left;
+			line-height: 1.5;
+			width: 100%;
+			margin-bottom: .5rem;
+			background-color: white;
+		}
+
+		.button {
+			background-color: #fff;
+			font-weight: 700;
+			margin: 0;
+			cursor: pointer;
+			border: 0;
+			display: block;
+			box-shadow: 0 0 10px 0 rgba(61,62,64,0.07), 0 4px 8px 0 rgba(61,62,64,0.025);
+			background-color: #5538fa;
+ 			color: #f7f8fa;
+			padding: 10px 16px;
+			line-height: 1.5;
+			border-radius: 8px;
+			font-size: 1rem;
+ 			transition: all 150ms ease-in-out;
+			width: 100%;
+		}
+		.button:hover {
+ 			transform: scale(1.007) translateY(-0.06rem) translateZ(0) perspective(1px);
+			box-shadow: 0 0 18px 0 rgba(61,62,64,0.075), 0 4px 12px 0 rgba(61,62,64,0.025);
+		}
+		label {
+			font-size: .75rem;
+			display: block;
+			font-weight: 800;
+			margin-bottom: .5rem;
+			line-height: 1.25;
+		}
+
+		form {
+			width: 100%;
+		}
+
+		.form {
+			display: block;
+		}
+
+		@media (min-width: 30em) {
+			input, .button {
+				width: auto;
+			}
+			input {
+				width: 25ch;
+			}
+			form {
+				margin: 0 auto;
+			}
+		}
+
+		.input-wrapper {
+			display: block;
+		}
+
+		.subscribe {
+			display: flex;
+			justify-content: center;
+		}
+
+
+		::selection {
+			background: #F8E981;
+			color: black;
+		}
 
 	</style>
 </head>
@@ -92,5 +160,27 @@
 	<h1>🎨 Gamut</h1>
 	<p style="color: #5C6166; font-size: 1.5rem; margin-bottom: 1rem; line-height: 1.25; font-weight: 600;">A simple tool for production-ready accessible color palettes</p>
 
-	<p>Hey, <a href="https://www.spacefarm.digital/" target="_blank">we</a>'re currently building Gamut. We are aiming to have an alpha by the end of this summer.</p>
+	<p>Hey, <a href="https://www.spacefarm.digital/" target="_blank">we</a>'re currently building Gamut. We are aiming to have an alpha by the end of this summer. Subscribe for more updates.</p>
+
+	<!-- Begin MailChimp Signup Form -->
+	<div id="mc_embed_signup" class="subscribe">
+		<form action="//digital.us15.list-manage.com/subscribe/post?u=fad415bf057508995d8b150ac&amp;id=73c8756076"
+		    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+		    class="validate" target="_blank" novalidate>
+			<div id="mc_embed_signup_scroll" class="form">
+			<div class="input-wrapper">
+				<label for="mce-EMAIL">Your email</label>
+				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+					required>
+				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fad415bf057508995d8b150ac_73c8756076" tabindex="-1" value=""></div>
+			</div>
+						
+			<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">Subscribe</button>
+			</div>
+		</form>
+	</div>
+
+	<!--End mc_embed_signup-->
+
 </body>
